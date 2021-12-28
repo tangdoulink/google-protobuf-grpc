@@ -37,7 +37,7 @@ public class HelloGrpcTest {
         // 订阅 grpc 服务
         ManagedChannel channel = ManagedChannelBuilder.forAddress("localhost", 18257).usePlaintext().build();
 
-        // 创建调用存要
+        // 创建调用存根
         HelloServiceGrpc.HelloServiceBlockingStub helloServiceBlockingStub = HelloServiceGrpc.newBlockingStub(channel);
 
         // 生成请求对象
